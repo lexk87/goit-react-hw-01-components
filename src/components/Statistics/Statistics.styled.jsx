@@ -31,7 +31,7 @@ export const StatItem = styled.li`
     align-items: center;
     width: calc(100% / 5);
     padding: 20px 10px;
-    background-color: ${color => getRandomHexColor()};
+    background-color: ${p => getRandomHexColor()};
 `;
 
 export const Label = styled.span`
