@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+function generateDarkColorHex() {
+    let color = "#";
+    for (let i = 0; i < 3; i++)
+        color += ("0" + Math.floor(Math.random() * Math.pow(16, 2) / 2).toString(16)).slice(-2);
+    return color;
 }
 
 export const StatisticsContainer = styled.section`
@@ -31,15 +34,17 @@ export const StatItem = styled.li`
     align-items: center;
     width: calc(100% / 5);
     padding: 20px 10px;
-    background-color: ${p => getRandomHexColor()};
+    background-color: ${p => generateDarkColorHex()};
 `;
 
 export const Label = styled.span`
     font-weight: 500;
     margin-bottom: 5px;
+    color: white;
 `;
 
 export const Percentage = styled.span`
     font-weight: 700;
     font-size: 24px;
+    color: white;
 `;
