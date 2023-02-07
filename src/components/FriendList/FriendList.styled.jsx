@@ -17,6 +17,7 @@ export const FriendListItem = styled.li`
     height: 100px;
     padding: 10px 20px;
     gap: 20px;
+    box-sizing: border-box;
 `;
 
 export const Status = styled.span`

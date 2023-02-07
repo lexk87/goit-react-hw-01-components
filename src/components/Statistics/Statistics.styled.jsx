@@ -36,12 +36,10 @@ export const StatItem = styled.li`
 
 export const Label = styled.span`
     font-weight: 500;
-    /* color: white; */
     margin-bottom: 5px;
 `;
 
 export const Percentage = styled.span`
     font-weight: 700;
     font-size: 24px;
-    /* color: white; */
 `;
